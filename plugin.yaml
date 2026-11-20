@@ -1,0 +1,11 @@
+name: oci-provider
+kind: model-provider
+version: 1.0.0
+description: Oracle Cloud Infrastructure (OCI) Generative AI models via the OpenAI-compatible API
+author: Federico Kamelhar
+requires_hermes: ">=0.23.3"
+requires_env:
+  - name: OCI_GENAI_API_KEY
+    description: OCI Generative AI API key (compartment-scoped)
+    url: https://docs.oracle.com/en-us/iaas/Content/generative-ai/api-keys.htm
+    secret: true
